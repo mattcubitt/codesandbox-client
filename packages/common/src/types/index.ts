@@ -81,7 +81,7 @@ export type CurrentUser = {
   integrations: {
     zeit?: {
       token: string;
-      email: string | undefined;
+      email?: string;
     };
     github?: {
       email: string;
@@ -91,7 +91,7 @@ export type CurrentUser = {
 
 export type SmallSandbox = {
   id: string;
-  title: string | undefined;
+  title?: string;
   insertedAt: string;
   updatedAt: string;
   likeCount: number;
